@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offerte Aanvragen | Clear IT - Direct Een IT Voorstel Op Maat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">CLEAR <span>IT</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="oplossingen.html">OPLOSSINGEN</a></li>
+                <li><a href="projecten.html">CASES</a></li>
+                <li><a href="offerte.html" class="active">CONTACT</a></li>
+                <li><a href="offerte.html" class="nav-btn">GRATIS IT SCAN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="sub-hero">
+        <div class="container">
+            <h1>Offerte aanvragen</h1>
+            <p>Laat je gegevens achter en we nemen binnen de werkdag contact op met een voorstel op maat.</p>
+        </div>
+    </header>
+
+    <section class="container overlap-section">
+        <div class="contact-card card">
+            <form action="https://formspree.io/f/jouw_code" method="POST">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="naam">Volledige naam *</label>
+                        <input type="text" id="naam" name="naam" placeholder="Jan Janssen" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">E-mailadres *</label>
+                        <input type="email" id="email" name="email" placeholder="jan@bedrijf.be" required>
+                    </div>
+                    <div class="field">
+                        <label for="tel">Telefoonnummer</label>
+                        <input type="tel" id="tel" name="tel" placeholder="0470 00 00 00">
+                    </div>
+                    <div class="field">
+                        <label for="bedrijf">Bedrijfsnaam</label>
+                        <input type="text" id="bedrijf" name="bedrijf" placeholder="Bedrijf NV">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="onderwerp">In welke oplossing ben je geïnteresseerd?</label>
+                    <select id="onderwerp" name="onderwerp">
+                        <option value="it-projecten">IT-Projecten & Consultancy</option>
+                        <option value="cloud">Cloud Oplossingen</option>
+                        <option value="security">Cybersecurity</option>
+                        <option value="scan">Gratis IT Scan</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="bericht">Jouw bericht / Vraag *</label>
+                    <textarea id="bericht" name="bericht" rows="5" placeholder="Beschrijf je project of vraag..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">VERZEND AANVRAAG</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Clear IT kloon. Alle rechten voorbehouden.</p>
+    </footer>
+
+</body>
+</html>

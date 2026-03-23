@@ -1,0 +1,126 @@
+:root {
+    --blue: #3b42cc;
+    --dark: #1e2495;
+    --text-dark: #333d4b;
+    --text-muted: #697386;
+    --light: #f4f7fa;
+    --white: #ffffff;
+    --border: #e3e8ee;
+    --shadow-main: 0 10px 30px rgba(0,0,0,0.05);
+    --shadow-heavy: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; color: var(--text-dark); line-height: 1.6; background: var(--white); }
+.bg-light { background: var(--light); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; background: var(--white); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border); }
+.nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+.logo { font-weight: 700; font-size: 24px; color: var(--dark); text-decoration: none; }
+.logo span { color: var(--blue); }
+.nav-links { list-style: none; display: flex; align-items: center; }
+.nav-links li { margin-left: 25px; }
+.nav-links a { text-decoration: none; color: var(--text-muted); font-size: 13px; font-weight: 600; text-transform: uppercase; }
+.nav-links a.active { color: var(--blue); }
+.nav-btn { border: 2px solid var(--blue); padding: 8px 18px; border-radius: 5px; color: var(--blue) !important; text-transform: uppercase; font-size: 13px; }
+
+/* Heroes */
+.hero, .sub-hero { background: linear-gradient(135deg, var(--dark) 0%, var(--blue) 100%); color: var(--white); text-align: center; }
+.hero { padding: 120px 5%; min-height: 500px; display: flex; align-items: center; justify-content: center; }
+.sub-hero { padding: 80px 5% 140px 5%; }
+.hero-content { max-width: 750px; }
+.hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; font-weight: 700; }
+.sub-hero h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 700; }
+.hero p, .sub-hero p { font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+.hero p { margin-bottom: 35px; }
+
+/* Knoppen */
+.btn-white { background: var(--white); color: var(--blue); padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; display: inline-block; margin: 10px; }
+.btn-outline { border: 2px solid var(--white); color: var(--white); padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; display: inline-block; margin: 10px; }
+.btn-solid-blue { background: var(--blue); color: var(--white); padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; }
+.btn-solid-blue:hover { background: var(--dark); transform: translateY(-2px); }
+
+/* NIEUWE STYLING: Waarom Sectie (n.a.v. image_1.png) */
+.waarom-section { padding: 80px 0; background: var(--white); }
+.waarom-container { display: flex; align-items: flex-start; gap: 60px; }
+
+/* Links: USP Sidebar */
+.usp-sidebar { flex: 0 0 320px; background: var(--light); padding: 30px; border-radius: 12px; }
+.usp-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 25px; }
+.usp-icon { font-size: 24px; color: var(--blue); padding-top: 2px; }
+.usp-text h3 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 5px; }
+.usp-text p { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+/* Rechts: Hoofdcontent Waarom */
+.waarom-main { flex: 1; }
+.sub-label { font-size: 12px; font-weight: 700; color: var(--blue); text-transform: uppercase; margin-bottom: 10px; }
+.waarom-main h2 { font-size: 2.5rem; font-weight: 700; color: var(--text-dark); margin-bottom: 40px; }
+.waarom-content-grid { display: flex; gap: 40px; margin-bottom: 40px; }
+.waarom-photo img { max-width: 100%; border-radius: 12px; object-fit: cover; box-shadow: var(--shadow-main); }
+
+/* Getuigenis */
+.waarom-testimonial { flex: 1; display: flex; flex-direction: column; }
+.testimonial-intro { font-size: 18px; color: var(--text-muted); margin-bottom: 20px; font-weight: 400; }
+.testimonial-quote { font-style: italic; font-size: 16px; color: var(--text-dark); border-left: 3px solid var(--blue); padding-left: 20px; margin-bottom: 30px; }
+.testimonial-author { display: flex; align-items: center; gap: 15px; margin-top: auto; }
+.author-photo { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; }
+.author-info strong { display: block; font-size: 15px; color: var(--text-dark); }
+.author-info span { font-size: 12px; color: var(--blue); font-weight: 700; text-transform: uppercase; }
+
+/* CTA Waarom */
+.cta-waarom { display: inline-block; width: auto; font-size: 14px; text-transform: uppercase; }
+
+/* Algemene Kaarten */
+.card { background: var(--white); border-radius: 12px; box-shadow: var(--shadow-main); border: 1px solid var(--border); overflow: hidden; }
+
+/* Oplossingen zebra */
+.solution-item { display: flex; align-items: center; padding: 60px 40px; margin-bottom: 30px; }
+.solution-item.reverse { flex-direction: row-reverse; }
+.sol-text { flex: 1; padding: 0 50px; }
+.sol-text h2 { font-size: 2rem; color: var(--dark); margin-bottom: 15px; font-weight: 700; }
+.sol-icon { font-size: 60px; }
+.read-more { color: var(--blue); text-decoration: none; font-weight: 700; display: block; margin-top: 15px; }
+
+/* Project Cards */
+.section-padding { padding: 60px 0; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+.project-img { height: 200px; background-size: cover; background-position: center; }
+.project-content { padding: 25px; }
+details { margin-top: 15px; border-top: 1px solid var(--border); padding-top: 15px; cursor: pointer; }
+summary { font-weight: 700; color: var(--blue); margin-bottom: 10px; }
+.tags span { background: var(--light); color: var(--blue); padding: 4px 10px; border-radius: 4px; font-size: 11px; margin-right: 5px; font-weight: 700; text-transform: uppercase; }
+
+/* Offerte Formulier */
+.overlap-section { margin-top: -100px; margin-bottom: 80px; position: relative; z-index: 10; }
+.contact-card { padding: 50px; box-shadow: var(--shadow-heavy); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.field { margin-bottom: 20px; display: flex; flex-direction: column; }
+label { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--muted); }
+input, select, textarea { padding: 14px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 15px; background: #fcfcfd; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(59, 66, 204, 0.1); }
+.btn-submit { background: var(--blue); color: var(--white); border: none; padding: 18px; border-radius: 6px; font-weight: 700; font-size: 14px; text-transform: uppercase; cursor: pointer; transition: 0.3s; }
+.btn-submit:hover { background: var(--dark); transform: translateY(-2px); box-shadow: var(--shadow-heavy); }
+
+/* Brand Bar */
+.brand-bar { padding: 40px 0; border-top: 1px solid var(--border); }
+.brand-grid { display: flex; justify-content: space-around; align-items: center; opacity: 0.4; filter: grayscale(1); flex-wrap: wrap; gap: 20px; }
+
+footer { text-align: center; padding: 40px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+
+/* Mobiel vriendelijk */
+@media (max-width: 992px) {
+    .waarom-container { flex-direction: column; gap: 40px; }
+    .usp-sidebar { flex: 1 1 auto; width: 100%; }
+    .waarom-content-grid { flex-direction: column; }
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .nav-links { display: none; }
+    .solution-item, .solution-item.reverse { flex-direction: column; text-align: center; padding: 30px; }
+    .sol-text { padding: 20px 0; }
+    .form-grid { grid-template-columns: 1fr; }
+    .contact-card { padding: 30px; }
+}
